@@ -1,0 +1,10 @@
+^C:\USERS\KONST\PROJEKTE\VSCODESDL\BUILD\CMAKEFILES\FE47F1F3DC8A4C2488D8EC2AA801D4BA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/konst/Projekte/VSCodeSDL -BC:/Users/konst/Projekte/VSCodeSDL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/konst/Projekte/VSCodeSDL/build/VSCodeSDL.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
